@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lithium.MainPage"
+             Title=""
+             BackgroundColor="#f0f0f0">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/styles/mystyles.css"/>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <StackLayout StyleClass="header" Orientation="Horizontal">
+                <Button ImageSource="menu.png" StyleClass="menu-button" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="#00FFFFFF"/>
+                <Label Text="Lithium" TextColor="Black" StyleClass="title" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+                <Button ImageSource="user.png" StyleClass="user" HorizontalOptions="End" VerticalOptions="Start" BackgroundColor="#00FFFFFF"/>
+            </StackLayout>
+
+            <Button ImageSource="voice_switcher.png" StyleClass="voice_switcher" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#00FFFFFF"></Button>
+            <Label Text="ВКЛ/ВЫКЛ" TextColor="Black" StyleClass="voice_switcher_label" HorizontalOptions="Center" VerticalOptions="Start"></Label>
+
+            <Button Text="Документация" TextColor="White" BackgroundColor="Black" StyleClass="options" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+            <Button Text="Палитра команд" TextColor="White" BackgroundColor="Black" StyleClass="options" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+            <Button Text="Магазин дополнений" TextColor="White" BackgroundColor="Black" StyleClass="options" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
